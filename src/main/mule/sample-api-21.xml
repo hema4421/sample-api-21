@@ -5,10 +5,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="eaa87ce7-2f3c-4a86-9fd1-abf1017ed8f3" >
-		<http:listener-connection host="localhost" port="8082" />
+		<http:listener-connection host="0.0.0.0" port="8081" readTimeout="80000"/>
 	</http:listener-config>
 	<flow name="sample-api-21Flow" doc:id="4fcd398b-b1ac-4117-a691-5e6ad909f6cb" >
 		<http:listener doc:name="Listener" doc:id="8031e0c9-d4e0-46a9-a780-c27e97dafa6e" config-ref="HTTP_Listener_config" path="/sample"/>
-		<set-payload value='#["working on git commands"]' doc:name="Set Payload" doc:id="9cb9e531-72a8-4655-a521-150de6bae760" />
+		<set-payload value='#["working on CICD using git + jenkins"]' doc:name="Set Payload" doc:id="9cb9e531-72a8-4655-a521-150de6bae760" />
 	</flow>
 </mule>
