@@ -57,6 +57,13 @@
 			<version>1.10.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mule.tools.maven/mule-maven-plugin -->
+		<dependency>
+   			 <groupId>org.mule.tools.maven</groupId>
+   			 <artifactId>mule-maven-plugin</artifactId>
+   			 <version>3.8.7</version>
+		</dependency>
+
 	</dependencies>
 
 	<repositories>
